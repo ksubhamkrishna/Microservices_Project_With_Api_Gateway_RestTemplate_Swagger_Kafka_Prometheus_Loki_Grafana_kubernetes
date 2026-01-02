@@ -18,6 +18,7 @@ import org.testcontainers.shaded.com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.math.BigDecimal;
 
+import static org.mockito.Mockito.description;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest(classes = ProductServiceApplication.class)
@@ -49,11 +50,13 @@ class ProductServiceApplicationTests {
 	}
 
 	private ProductRequest getProductRequest(){
-		return ProductRequest.builder()
-				.name("iphone 13")
-				.description("iphone 13")
-				.price(BigDecimal.valueOf(1200))
-				.build();
+		return new ProductRequest(
+                "693a77091ba546089b930393",
+				"iphone 15",
+				"iphone 15",
+                "iphone 15",
+
+                BigDecimal.valueOf(1200));
 	}
 
 }

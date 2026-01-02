@@ -10,7 +10,7 @@
         <module name="api-gateway" />
         <module name="notification-service" />
       </profile>
-      <profile name="Annotation profile for microservices-parent" enabled="true">
+      <profile name="Annotation profile for microservice_project_with_Swagger_api_gateway_Loki_prometheus_grafana_Tempo_Kubernetes_and_RestApi_Call" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />

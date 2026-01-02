@@ -106,7 +106,7 @@
 		</dependency>
 
 	</dependencies>
-		<dependencyManagement>
+		<!--<dependencyManagement>
 			<dependencies>
 				<dependency>
 					<groupId>org.testcontainers</groupId>
@@ -116,7 +116,7 @@
 					<scope>import</scope>
 				</dependency>
 			</dependencies>
-		</dependencyManagement>
+		</dependencyManagement>-->
 
 
 
