@@ -139,6 +139,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+
+                        <image>
+                            <builder>paketobuildpacks/builder-jammy-base</builder>
+
+                            <name>ksubhamkrishna/${project.artifactId}:${project.version}</name>
+
+                            <publish>false</publish>
+                        </image>
+
+
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>

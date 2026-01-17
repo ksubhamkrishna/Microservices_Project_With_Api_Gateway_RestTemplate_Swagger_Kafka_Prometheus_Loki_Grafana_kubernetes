@@ -25,8 +25,7 @@
     <!-- Optional but recommended -->
     <properties>
         <java.version>21</java.version>
-        <spring.boot.version>3.2.5</spring.boot.version>
-        <dockerPassword>${env.DOCKER_PASSWORD}</dockerPassword>
+        <spring.boot.version>3.4.10</spring.boot.version>
     </properties>
 
     <dependencyManagement>
@@ -51,22 +50,22 @@
                     <groupId>org.springframework.boot</groupId>
                     <artifactId>spring-boot-maven-plugin</artifactId>
                     <version>3.4.10</version>
-                    <configuration>
+                    <!--<configuration>
                         <image>
                             <builder>paketobuildpacks/builder-jammy-base</builder>
 
-                            <name>ksubhamkrishna/new-${project.artifactId}</name>
+                            <name>ksubhamkrishna/${project.artifactId}:${project.version}</name>
 
                             <publish>true</publish>
-                        </image>
-                        <docker>
+                        </image>-->
+                        <!--<docker>
 
                             <publishRegistry>
-                                <username>ksubhamkrishna</username>
-                                <password>${dockerPassword}</password>
+                                <dockerUserName>ksubhamkrishna</dockerUserName>
+                                <dockerPassword>${dockerPassword}</dockerPassword>
                             </publishRegistry>
-                        </docker>
-                    </configuration>
+                        </docker>-->
+                    <!--</configuration>-->
                 </plugin>
 
             </plugins>
